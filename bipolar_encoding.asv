@@ -1,0 +1,7 @@
+n=8; %stream size 
+prompt = 'Enter '; %requests number of ones from the user
+Y = input(prompt) %getting the number of ones from the user
+g = round((Y+n)/2)
+Z = zeros(1,n);
+Z(1:g)=1;
+Z = Z(randperm(numel(Z)))
