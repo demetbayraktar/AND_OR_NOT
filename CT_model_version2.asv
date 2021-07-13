@@ -1,5 +1,5 @@
 
-N = 8;
+N = 8; %define the stream size 
 prompt = 'Enter the first number ';
 X1 = input(prompt)
 prompt2 = 'Enter the second number ';
