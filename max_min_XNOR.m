@@ -14,7 +14,7 @@ y = ~or(X1,X2);
 variable = input('If you want to see maximum correlation type 1\nIf you want to see minimum correlation type 2\nType: ');
 
 %for and operation
-for y = ~or(X1,X2)
+for y = ~xor(X1,X2)
     if variable == 1
         disp(a_max);
     elseif variable ==2
