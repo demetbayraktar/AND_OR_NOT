@@ -1,14 +1,14 @@
 %getting the first number from a user
-X1  = input('Enter the first number '); 
+X1  = input('Enter the first number ') 
 %getting the second number from a user
-X2 = input('Enter the second number ');
+X2 = input('Enter the second number ')
 
 
 N = 8; %define the stream size
 
 a_max = max(N-X1,N-X2);%maxiumum pair of 11's
 a_min = N-X1 + N-X2; %minimum pair of 11's
-a_mid = floor((a_max + a_min)/2)
+a_mid = floor((a_max + a_min)/2); %middle point approximation
 
 
 %getting input from user
@@ -21,6 +21,9 @@ for y = ~(X1&X2)
     elseif variable ==2
         disp(a_min);
     elseif variable==3
+        disp('Middle point approximation: ')
         disp(a_mid);
+        
+        
     end
 end

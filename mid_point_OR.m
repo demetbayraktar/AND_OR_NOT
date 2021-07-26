@@ -8,7 +8,7 @@ N = 8; %define the stream size
 
 a_max = max(X1,X2);%maxiumum pair of 11's
 a_min = X1+X2; %minimum pair of 11's
-a_mid = floor((a_max + a_min)/2)
+a_mid = floor((a_max + a_min)/2) %middle point approximation
 
 
 %getting input from user

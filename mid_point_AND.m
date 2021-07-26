@@ -7,18 +7,12 @@ X2 = input('Enter the second number ');
 N = 8; %define the stream size
 
 a_max = min(X1,X2);%maxiumum pair of 11's
-b_min = X1-a_max; %minimum pair of 10's
-c_min = X2-a_max; %minimum pair of 01's
-d_max = min((N-X1),(N-X2)); %maximum pair of 00's
 a_min = max(0,X1+X2-N); %minimum pair of 11's
-b_max = X1-a_min; %maxiumum pair of 10's
-c_max = X2-a_min; %maximum pair of 01's
-d_min = max(0,N-X1+X2); %minimum pair of 00's
-a_mid = floor((a_max + a_min)/2)
+a_mid = floor((a_max + a_min)/2) %middle point approximation
 
 
 %getting input from user
-variable = input('If you want to see maximum correlation type 1\nIf you want to see minimum correlation type 2\nIf you want to see mid point, type 3\nType: ');
+variable = input('If you want to see maximum correlation type\nIf you want to see minimum correlation type 2\nIf you want to see mid point, type 3\nType: ');
 
 %for and operation
 for y = (X1&X2)
