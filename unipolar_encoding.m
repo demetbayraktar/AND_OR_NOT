@@ -13,6 +13,7 @@ A = zeros(1,n);
 A(1:X)=1; 
 UPE = X/n;
 
+
 %n-bit stochastic number by BPU
 A = A(randperm(numel(A)))
 
